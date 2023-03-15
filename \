@@ -1,0 +1,7 @@
+#include "compiler.h"
+//point the file name that need to be compile and the output filename
+//flags show how we should compile the text.c file
+int compile_file(const char* filename, const char* output_filename, int flags){
+
+    return 0;
+}

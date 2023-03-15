@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project (LuosuCompileProject C)
+aux_source_directory(. DIR_SRCS)
+add_subdirectory(helpers)
+add_executable(LuosuCompileProject ${DIR_SRCS})
+target_link_libraries(LuosuCompileProject Helpers)

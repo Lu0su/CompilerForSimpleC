@@ -1,0 +1,1 @@
+/usr/bin/cc -rdynamic CMakeFiles/LuosuCompileProject.dir/compiler.c.o CMakeFiles/LuosuCompileProject.dir/cprocess.c.o CMakeFiles/LuosuCompileProject.dir/main.c.o -o LuosuCompileProject  helpers/libHelpers.a 
