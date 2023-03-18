@@ -10,7 +10,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/luosu/codeproject/LuosuCompile/compiler.c" "CMakeFiles/LuosuCompileProject.dir/compiler.c.o" "gcc" "CMakeFiles/LuosuCompileProject.dir/compiler.c.o.d"
   "/home/luosu/codeproject/LuosuCompile/cprocess.c" "CMakeFiles/LuosuCompileProject.dir/cprocess.c.o" "gcc" "CMakeFiles/LuosuCompileProject.dir/cprocess.c.o.d"
+  "/home/luosu/codeproject/LuosuCompile/lex_process.c" "CMakeFiles/LuosuCompileProject.dir/lex_process.c.o" "gcc" "CMakeFiles/LuosuCompileProject.dir/lex_process.c.o.d"
+  "/home/luosu/codeproject/LuosuCompile/lexer.c" "CMakeFiles/LuosuCompileProject.dir/lexer.c.o" "gcc" "CMakeFiles/LuosuCompileProject.dir/lexer.c.o.d"
   "/home/luosu/codeproject/LuosuCompile/main.c" "CMakeFiles/LuosuCompileProject.dir/main.c.o" "gcc" "CMakeFiles/LuosuCompileProject.dir/main.c.o.d"
+  "/home/luosu/codeproject/LuosuCompile/token.c" "CMakeFiles/LuosuCompileProject.dir/token.c.o" "gcc" "CMakeFiles/LuosuCompileProject.dir/token.c.o.d"
   )
 
 # Targets to which this target links.

@@ -1,5 +1,5 @@
-CMakeFiles/LuosuCompileProject.dir/main.c.o: \
- /home/luosu/codeproject/LuosuCompile/main.c /usr/include/stdc-predef.h \
+CMakeFiles/LuosuCompileProject.dir/lexer.c.o: \
+ /home/luosu/codeproject/LuosuCompile/lexer.c /usr/include/stdc-predef.h \
  /home/luosu/codeproject/LuosuCompile/compiler.h \
  /home/luosu/codeproject/LuosuCompile/helpers/vector.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
@@ -55,4 +55,6 @@ CMakeFiles/LuosuCompileProject.dir/main.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h /usr/include/string.h \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
- /usr/include/strings.h
+ /usr/include/strings.h \
+ /home/luosu/codeproject/LuosuCompile/helpers/buffer.h \
+ /usr/include/assert.h

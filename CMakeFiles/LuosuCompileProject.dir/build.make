@@ -97,10 +97,38 @@ CMakeFiles/LuosuCompileProject.dir/cprocess.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LuosuCompileProject.dir/cprocess.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/luosu/codeproject/LuosuCompile/cprocess.c -o CMakeFiles/LuosuCompileProject.dir/cprocess.c.s
 
+CMakeFiles/LuosuCompileProject.dir/lex_process.c.o: CMakeFiles/LuosuCompileProject.dir/flags.make
+CMakeFiles/LuosuCompileProject.dir/lex_process.c.o: lex_process.c
+CMakeFiles/LuosuCompileProject.dir/lex_process.c.o: CMakeFiles/LuosuCompileProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luosu/codeproject/LuosuCompile/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/LuosuCompileProject.dir/lex_process.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LuosuCompileProject.dir/lex_process.c.o -MF CMakeFiles/LuosuCompileProject.dir/lex_process.c.o.d -o CMakeFiles/LuosuCompileProject.dir/lex_process.c.o -c /home/luosu/codeproject/LuosuCompile/lex_process.c
+
+CMakeFiles/LuosuCompileProject.dir/lex_process.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LuosuCompileProject.dir/lex_process.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/luosu/codeproject/LuosuCompile/lex_process.c > CMakeFiles/LuosuCompileProject.dir/lex_process.c.i
+
+CMakeFiles/LuosuCompileProject.dir/lex_process.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LuosuCompileProject.dir/lex_process.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/luosu/codeproject/LuosuCompile/lex_process.c -o CMakeFiles/LuosuCompileProject.dir/lex_process.c.s
+
+CMakeFiles/LuosuCompileProject.dir/lexer.c.o: CMakeFiles/LuosuCompileProject.dir/flags.make
+CMakeFiles/LuosuCompileProject.dir/lexer.c.o: lexer.c
+CMakeFiles/LuosuCompileProject.dir/lexer.c.o: CMakeFiles/LuosuCompileProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luosu/codeproject/LuosuCompile/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/LuosuCompileProject.dir/lexer.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LuosuCompileProject.dir/lexer.c.o -MF CMakeFiles/LuosuCompileProject.dir/lexer.c.o.d -o CMakeFiles/LuosuCompileProject.dir/lexer.c.o -c /home/luosu/codeproject/LuosuCompile/lexer.c
+
+CMakeFiles/LuosuCompileProject.dir/lexer.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LuosuCompileProject.dir/lexer.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/luosu/codeproject/LuosuCompile/lexer.c > CMakeFiles/LuosuCompileProject.dir/lexer.c.i
+
+CMakeFiles/LuosuCompileProject.dir/lexer.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LuosuCompileProject.dir/lexer.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/luosu/codeproject/LuosuCompile/lexer.c -o CMakeFiles/LuosuCompileProject.dir/lexer.c.s
+
 CMakeFiles/LuosuCompileProject.dir/main.c.o: CMakeFiles/LuosuCompileProject.dir/flags.make
 CMakeFiles/LuosuCompileProject.dir/main.c.o: main.c
 CMakeFiles/LuosuCompileProject.dir/main.c.o: CMakeFiles/LuosuCompileProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luosu/codeproject/LuosuCompile/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/LuosuCompileProject.dir/main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luosu/codeproject/LuosuCompile/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/LuosuCompileProject.dir/main.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LuosuCompileProject.dir/main.c.o -MF CMakeFiles/LuosuCompileProject.dir/main.c.o.d -o CMakeFiles/LuosuCompileProject.dir/main.c.o -c /home/luosu/codeproject/LuosuCompile/main.c
 
 CMakeFiles/LuosuCompileProject.dir/main.c.i: cmake_force
@@ -111,22 +139,42 @@ CMakeFiles/LuosuCompileProject.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LuosuCompileProject.dir/main.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/luosu/codeproject/LuosuCompile/main.c -o CMakeFiles/LuosuCompileProject.dir/main.c.s
 
+CMakeFiles/LuosuCompileProject.dir/token.c.o: CMakeFiles/LuosuCompileProject.dir/flags.make
+CMakeFiles/LuosuCompileProject.dir/token.c.o: token.c
+CMakeFiles/LuosuCompileProject.dir/token.c.o: CMakeFiles/LuosuCompileProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luosu/codeproject/LuosuCompile/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/LuosuCompileProject.dir/token.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LuosuCompileProject.dir/token.c.o -MF CMakeFiles/LuosuCompileProject.dir/token.c.o.d -o CMakeFiles/LuosuCompileProject.dir/token.c.o -c /home/luosu/codeproject/LuosuCompile/token.c
+
+CMakeFiles/LuosuCompileProject.dir/token.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LuosuCompileProject.dir/token.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/luosu/codeproject/LuosuCompile/token.c > CMakeFiles/LuosuCompileProject.dir/token.c.i
+
+CMakeFiles/LuosuCompileProject.dir/token.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LuosuCompileProject.dir/token.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/luosu/codeproject/LuosuCompile/token.c -o CMakeFiles/LuosuCompileProject.dir/token.c.s
+
 # Object files for target LuosuCompileProject
 LuosuCompileProject_OBJECTS = \
 "CMakeFiles/LuosuCompileProject.dir/compiler.c.o" \
 "CMakeFiles/LuosuCompileProject.dir/cprocess.c.o" \
-"CMakeFiles/LuosuCompileProject.dir/main.c.o"
+"CMakeFiles/LuosuCompileProject.dir/lex_process.c.o" \
+"CMakeFiles/LuosuCompileProject.dir/lexer.c.o" \
+"CMakeFiles/LuosuCompileProject.dir/main.c.o" \
+"CMakeFiles/LuosuCompileProject.dir/token.c.o"
 
 # External object files for target LuosuCompileProject
 LuosuCompileProject_EXTERNAL_OBJECTS =
 
 LuosuCompileProject: CMakeFiles/LuosuCompileProject.dir/compiler.c.o
 LuosuCompileProject: CMakeFiles/LuosuCompileProject.dir/cprocess.c.o
+LuosuCompileProject: CMakeFiles/LuosuCompileProject.dir/lex_process.c.o
+LuosuCompileProject: CMakeFiles/LuosuCompileProject.dir/lexer.c.o
 LuosuCompileProject: CMakeFiles/LuosuCompileProject.dir/main.c.o
+LuosuCompileProject: CMakeFiles/LuosuCompileProject.dir/token.c.o
 LuosuCompileProject: CMakeFiles/LuosuCompileProject.dir/build.make
 LuosuCompileProject: helpers/libHelpers.a
 LuosuCompileProject: CMakeFiles/LuosuCompileProject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/luosu/codeproject/LuosuCompile/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable LuosuCompileProject"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/luosu/codeproject/LuosuCompile/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable LuosuCompileProject"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LuosuCompileProject.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

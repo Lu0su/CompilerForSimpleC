@@ -29,15 +29,15 @@ void text1()
 
 void text2()
 {
-    int res = compile_file("./text.c", "text.o", 0);
+    int res = compile_file("./text.c", "text.txt", 0);
     if (res == COMPILER_FILE_COMPILE_OK) {
-        printf("everything is ok");
+        printf("everything is ok\n");
     }
     else if (res == COMPILER_FALSE_WITH_ERROR) {
-        printf("compile false");
+        printf("compile false\n");
     }
     else {
-        printf("unknow expection");
+        printf("unknow expection\n");
     }
 
     return;

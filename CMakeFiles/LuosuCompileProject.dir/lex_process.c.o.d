@@ -1,5 +1,6 @@
-CMakeFiles/LuosuCompileProject.dir/main.c.o: \
- /home/luosu/codeproject/LuosuCompile/main.c /usr/include/stdc-predef.h \
+CMakeFiles/LuosuCompileProject.dir/lex_process.c.o: \
+ /home/luosu/codeproject/LuosuCompile/lex_process.c \
+ /usr/include/stdc-predef.h \
  /home/luosu/codeproject/LuosuCompile/compiler.h \
  /home/luosu/codeproject/LuosuCompile/helpers/vector.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \

@@ -190,6 +190,54 @@ cprocess.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LuosuCompileProject.dir/build.make CMakeFiles/LuosuCompileProject.dir/cprocess.c.s
 .PHONY : cprocess.c.s
 
+lex_process.o: lex_process.c.o
+.PHONY : lex_process.o
+
+# target to build an object file
+lex_process.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LuosuCompileProject.dir/build.make CMakeFiles/LuosuCompileProject.dir/lex_process.c.o
+.PHONY : lex_process.c.o
+
+lex_process.i: lex_process.c.i
+.PHONY : lex_process.i
+
+# target to preprocess a source file
+lex_process.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LuosuCompileProject.dir/build.make CMakeFiles/LuosuCompileProject.dir/lex_process.c.i
+.PHONY : lex_process.c.i
+
+lex_process.s: lex_process.c.s
+.PHONY : lex_process.s
+
+# target to generate assembly for a file
+lex_process.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LuosuCompileProject.dir/build.make CMakeFiles/LuosuCompileProject.dir/lex_process.c.s
+.PHONY : lex_process.c.s
+
+lexer.o: lexer.c.o
+.PHONY : lexer.o
+
+# target to build an object file
+lexer.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LuosuCompileProject.dir/build.make CMakeFiles/LuosuCompileProject.dir/lexer.c.o
+.PHONY : lexer.c.o
+
+lexer.i: lexer.c.i
+.PHONY : lexer.i
+
+# target to preprocess a source file
+lexer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LuosuCompileProject.dir/build.make CMakeFiles/LuosuCompileProject.dir/lexer.c.i
+.PHONY : lexer.c.i
+
+lexer.s: lexer.c.s
+.PHONY : lexer.s
+
+# target to generate assembly for a file
+lexer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LuosuCompileProject.dir/build.make CMakeFiles/LuosuCompileProject.dir/lexer.c.s
+.PHONY : lexer.c.s
+
 main.o: main.c.o
 .PHONY : main.o
 
@@ -214,6 +262,30 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LuosuCompileProject.dir/build.make CMakeFiles/LuosuCompileProject.dir/main.c.s
 .PHONY : main.c.s
 
+token.o: token.c.o
+.PHONY : token.o
+
+# target to build an object file
+token.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LuosuCompileProject.dir/build.make CMakeFiles/LuosuCompileProject.dir/token.c.o
+.PHONY : token.c.o
+
+token.i: token.c.i
+.PHONY : token.i
+
+# target to preprocess a source file
+token.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LuosuCompileProject.dir/build.make CMakeFiles/LuosuCompileProject.dir/token.c.i
+.PHONY : token.c.i
+
+token.s: token.c.s
+.PHONY : token.s
+
+# target to generate assembly for a file
+token.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LuosuCompileProject.dir/build.make CMakeFiles/LuosuCompileProject.dir/token.c.s
+.PHONY : token.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -230,9 +302,18 @@ help:
 	@echo "... cprocess.o"
 	@echo "... cprocess.i"
 	@echo "... cprocess.s"
+	@echo "... lex_process.o"
+	@echo "... lex_process.i"
+	@echo "... lex_process.s"
+	@echo "... lexer.o"
+	@echo "... lexer.i"
+	@echo "... lexer.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... token.o"
+	@echo "... token.i"
+	@echo "... token.s"
 .PHONY : help
 
 

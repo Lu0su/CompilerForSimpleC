@@ -1,1 +1,1 @@
-/usr/bin/cc -rdynamic CMakeFiles/LuosuCompileProject.dir/compiler.c.o CMakeFiles/LuosuCompileProject.dir/cprocess.c.o CMakeFiles/LuosuCompileProject.dir/main.c.o -o LuosuCompileProject  helpers/libHelpers.a 
+/usr/bin/cc -g -rdynamic CMakeFiles/LuosuCompileProject.dir/compiler.c.o CMakeFiles/LuosuCompileProject.dir/cprocess.c.o CMakeFiles/LuosuCompileProject.dir/lex_process.c.o CMakeFiles/LuosuCompileProject.dir/lexer.c.o CMakeFiles/LuosuCompileProject.dir/main.c.o CMakeFiles/LuosuCompileProject.dir/token.c.o -o LuosuCompileProject  helpers/libHelpers.a 
