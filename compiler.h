@@ -37,7 +37,6 @@ case '9'
 case '+':                                \
 case '-':                                \
 case '*':                                \
-case '/':                                \
 case '>':                                \
 case '<':                                \
 case '^':                                \

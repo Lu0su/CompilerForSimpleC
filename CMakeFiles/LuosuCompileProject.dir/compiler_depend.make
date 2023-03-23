@@ -265,7 +265,8 @@ CMakeFiles/LuosuCompileProject.dir/lexer.c.o: lexer.c \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
   /usr/include/strings.h \
   helpers/buffer.h \
-  /usr/include/assert.h
+  /usr/include/assert.h \
+  /usr/include/ctype.h
 
 CMakeFiles/LuosuCompileProject.dir/main.c.o: main.c \
   /usr/include/stdc-predef.h \
@@ -433,6 +434,8 @@ cprocess.c:
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
+
+/usr/include/ctype.h:
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 

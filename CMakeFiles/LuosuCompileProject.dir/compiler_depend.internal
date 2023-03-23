@@ -270,6 +270,7 @@ CMakeFiles/LuosuCompileProject.dir/lexer.c.o
  /usr/include/strings.h
  /home/luosu/codeproject/LuosuCompile/helpers/buffer.h
  /usr/include/assert.h
+ /usr/include/ctype.h
 
 CMakeFiles/LuosuCompileProject.dir/main.c.o
  /home/luosu/codeproject/LuosuCompile/main.c

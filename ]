@@ -17,7 +17,7 @@
 struct token*              read_next_token();
 static struct lex_process* the_lex_process;
 static struct token        tmp_token;
-bool lex_is_in_expression();
+
 /*
  *
  * the meta func we need to handle a char
@@ -31,11 +31,6 @@ static char peekc()
 static char nextc()
 {
     char c = the_lex_process->function->next_char(the_lex_process);
-    if (lex_is_in_expression()){
-        // if we are in the expression
-        // we write it into the parentheses_buffer for debug information
-        buffer_write(the_lex_process->parentheses_buffer, c);
-    }
     the_lex_process->pos.col++;
     // we get the \n but we did not handle it
     if (c == '\n') {
@@ -69,11 +64,6 @@ struct token* token_create(struct token* the_token)
 {
     memcpy(&tmp_token, the_token, sizeof(struct token));
     tmp_token.pos = lex_file_position();
-    if (lex_is_in_expression()){
-        // (10 + 4 + 3) for any token in this expression, we can get the full
-        // expression of 10 + 4 + 3 i
-        tmp_token.between_brack = buffer_ptr(the_lex_process->parentheses_buffer);
-    }
     return &tmp_token;
 }
 
@@ -127,7 +117,6 @@ unsigned long long read_number()
 
 struct token* token_make_number_for_value(unsigned long long number)
 {
-    printf("number token: %lld \n", number);
     return token_create(&(struct token){.type = TOKEN_TYPE_NUMBER, .llnum = number});
 }
 
@@ -448,6 +437,7 @@ struct token* handle_comment()
  *
  *
  * */
+
 char lex_get_esacped_char(char c)
 {
     char co = 0;
@@ -467,7 +457,7 @@ struct token* token_make_quote()
     // \n - > n
     if (c == '\\') {
         c = nextc();   // we got n if it is a \n
-        c = lex_get_esacped_char(c);   // handle the n
+        c = lex_get_esacped_char(c);
     }
 
     if (nextc() != '\'') {
@@ -476,94 +466,6 @@ struct token* token_make_quote()
     }
 
     return token_create(&(struct token){.type = TOKEN_TYPE_NUMBER, .cval = c});
-}
-
-/*
- *
- *
- * handle special number
- * like 0x1ffc, 084
- *
- *
- * */
-
-void lex_pop_token()
-{
-    vector_pop(the_lex_process->token_ve);
-}
-
-bool is_hex_char(char c)
-{
-    // turn it to lower case
-    c = tolower(c);
-    return (c >= '0' && c <= '9') || (c >= 'a' && c <= 'f');
-}
-
-const char* read_hex_number_str()
-{
-    struct buffer* buf = buffer_create();
-    char           c   = peekc();
-    LEX_GETC_IF(buf, c, is_hex_char(c));
-    buffer_write(buf, 0x00);
-    return buffer_ptr(buf);
-}
-
-void lex_validate_binary_string(const char* str)
-{
-    size_t len = strlen(str);
-    for (int i = 0; i < len; ++i) {
-        if (str[i] != '0' && str[i] != '1') {
-            compiler_error(the_lex_process->compiler, "This is not vaild a binary number\n");
-        }
-    }
-}
-
-struct token* token_make_special_number_bin()
-{
-    // skip the 'b'
-    nextc();
-
-    unsigned long long number     = 0;
-    const char*        number_str = read_number_str();   // get number_str
-    lex_validate_binary_string(number_str);              // make sure it is binary string
-    number = strtol(number_str, 0, 2);
-    return token_make_number_for_value(number);
-}
-
-struct token* token_make_special_number_hex()
-{
-    // Skip the 'x'
-    nextc();
-
-    unsigned long number     = 0;
-    const char*   number_str = read_hex_number_str();
-    number                   = strtol(number_str, 0, 16);   // basic on 16
-    return token_make_number_for_value(number);             // handle it to the number token
-}
-
-struct token* token_make_special_number()
-{
-    struct token* the_token = NULL;
-    struct token* last_token = lex_last_token();
-
-    // last_token is void or not the value we need
-    if (!last_token || !(last_token->type == TOKEN_TYPE_NUMBER && last_token->llnum == 0)) {
-        return token_make_id_or_key();
-    }
-    // pop off the last token
-    lex_pop_token();
-
-    char c = peekc();
-    if (c == 'x') {
-        the_token = token_make_special_number_hex();
-    }
-    else if (c == 'b') {
-        the_token = token_make_special_number_bin();
-    }
-
-    // if it start with 0x, we can successful get the hex number
-    // else we push back the 0 we just pop back
-    return the_token;
 }
 
 struct token*              read_next_token()
@@ -584,6 +486,7 @@ struct token*              read_next_token()
     NUMERIC_CASE:
         // printf("number token: %c \n", c);
         the_token = token_make_number();
+        printf("number token: %lld \n", the_token->llnum);
         break;
 
     OPERATOR_CASE_EXCLUDING_DIVISION:
@@ -597,20 +500,17 @@ struct token*              read_next_token()
         printf("symbol token: %c \n", the_token->cval);
         break;
 
-    // before the string token
-    case 'x': the_token = token_make_special_number(); break;
-
     case '"':
         // printf("this is a string:\n");
         the_token = token_make_string('"', '"');
         printf("string token: %s \n", the_token->sval);
         break;
     case '\'':
-        the_token = token_make_quote();
+        the_token = handle_whitespace();
         printf("quote token: %c \n", the_token->cval);
         break;
 
-    // we do not care whitespace
+        // we do not care whitespace
     // but we net the_token not to be NULL
     case ' ':
     case '\t': the_token = handle_whitespace(); break;

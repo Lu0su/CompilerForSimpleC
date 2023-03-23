@@ -1,0 +1,18 @@
+# ninja log v5
+10	969	1679215149209302531	CMakeFiles/LuosuCompileProject.dir/lex_process.c.o	dc4731d95883ab23
+976	1170	1679215149441301976	helpers/CMakeFiles/Helpers.dir/vector.c.o	524214b83c7a3569
+34	976	1679215149233302473	CMakeFiles/LuosuCompileProject.dir/token.c.o	eb291a1295cce6c7
+1	82	1679215219857133617	CMakeFiles/LuosuCompileProject.dir/lexer.c.o	f6a20bf80fed2a51
+82	125	1679215219881133558	LuosuCompileProject	100efdacc361ac6d
+0	1004	1679215149289302336	CMakeFiles/LuosuCompileProject.dir/compiler.c.o	61db86e79013277b
+969	1038	1679215149317302268	helpers/CMakeFiles/Helpers.dir/buffer.c.o	418ccc57e7b0f53b
+32	1038	1679215149281302356	CMakeFiles/LuosuCompileProject.dir/main.c.o	23a891e49bb20bc6
+0	1038	1679215149289302336	CMakeFiles/LuosuCompileProject.dir/cprocess.c.o	aa09598063e9dc30
+1	183	1679215169341255080	helpers/libHelpers.a	cc8450ac8a5d37cf
+0	53	1679216303698085976	CMakeFiles/LuosuCompileProject.dir/compiler.c.o	61db86e79013277b
+0	113	1679216303758085796	CMakeFiles/LuosuCompileProject.dir/cprocess.c.o	aa09598063e9dc30
+46	144	1679216303790085700	CMakeFiles/LuosuCompileProject.dir/main.c.o	23a891e49bb20bc6
+9	174	1679216303818085616	CMakeFiles/LuosuCompileProject.dir/lex_process.c.o	dc4731d95883ab23
+47	182	1679216303830085580	CMakeFiles/LuosuCompileProject.dir/token.c.o	eb291a1295cce6c7
+42	341	1679216303986085112	CMakeFiles/LuosuCompileProject.dir/lexer.c.o	f6a20bf80fed2a51
+341	392	1679216304038084956	LuosuCompileProject	100efdacc361ac6d
